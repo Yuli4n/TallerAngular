@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table table-striped">
+      <caption id="avg-seasons">Seasons average: {{average()}}</caption>
+      <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Título</th>
+            <th scope="col">Canal</th>
+            <th scope="col">Temporadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of series">
+            <td>
+              <dd>{{s.id}}</dd>
+            </td>
+            <td>
+              <dd>{{s.titulo}}</dd>
+            </td>
+            <td>
+              <dd>{{s.canal}}</dd>
+            </td>
+            <td>
+              <dd>{{s.temporadas}}</dd>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
